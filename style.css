@@ -2138,3 +2138,22 @@ body {
 .greeting__date {
   animation-play-state: running !important;
 }
+
+@media (max-width: 600px) {
+  .greeting {
+    text-align: center;
+    padding: 0 12px;
+  }
+
+  .greeting__title {
+    /* linh hoạt: tối thiểu 32px, tỷ lệ theo viewport, tối đa 56px */
+    font-size: clamp(32px, 9vw, 56px);
+    line-height: 1.05;
+    margin: 0.1em 0;
+  }
+
+  .greeting__date {
+    font-size: clamp(16px, 4.5vw, 22px);
+    margin: 0;
+  }
+}
