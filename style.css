@@ -2158,3 +2158,16 @@ body {
   }
 }
 
+.greeting {
+  /* bỏ delay tổng */
+  animation-delay: 0s !important;
+  /* nếu muốn vô hiệu hoá stagger chữ từng ký tự: */
+  --letter-stagger: 0ms;
+}
+
+.greeting__title span,
+.greeting__title::after,
+.greeting__date {
+  /* bỏ mọi delay riêng lẻ */
+  animation-delay: 0s !important;
+}
