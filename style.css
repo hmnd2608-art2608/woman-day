@@ -2158,14 +2158,3 @@ body {
   }
 }
 
-.greeting {
-  position: relative;
-  z-index: 9999; /* chắc chắn hiển thị trên các layer khác */
-  color: #fff; /* hoặc màu tương phản với background */
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%;
-}
-/* đảm bảo font fallback nếu Google font không load */
-.greeting__title, .greeting__date {
-  font-family: "Great Vibes", "Montserrat", system-ui, -apple-system, sans-serif;
-}
